@@ -21,13 +21,19 @@
         <div>
             <span onclick="menu()" id="fechar" class="material-symbols-outlined">close</span>
             <div id="botao-div">
-                <input onclick="mudarPag(0)" type="button" value="Pesquisa" class="botoes">
-                <input onclick="mudarPag(1)" type="button" value="Construção" class="botoes">
-                <input onclick="mudarPag(2)" type="button" value="Programação" class="botoes">
-                <input onclick="mudarPag(3)" type="button" value="Core Values" class="botoes">
+                <input onclick="mudarPag(1)" type="button" value="Pesquisa" class="botoes">
+                <input onclick="mudarPag(2)" type="button" value="Construção" class="botoes">
+                <input onclick="mudarPag(3)" type="button" value="Programação" class="botoes">
+                <input onclick="mudarPag(4)" type="button" value="Core Values" class="botoes">
             </div>
         </div>
     </nav>
+
+    <article class="pags">
+        <section>
+
+        </section>
+    </article>
 
     <article class="pags"> 
         <section>
@@ -39,16 +45,53 @@
             <h2>Preparação</h2>
             <p>Após isso, começamos a pensar em uma maneira prática, fácil e que funcionasse bem para o que estavamos planejando, e pensamos em fazer uma máquina que átravez de um banco de dados em que você colocava o livro, ela lia e transformava em braille.</p>
             <h2>Finalização</h2>
+            <img src="imagens/projeto3d.jpg" alt="Projeto 3d" onclick="ampliarImg('projeto3d')" id="projeto3d">
+            <div class="agrupadorDaImg" id="projeto3d1">
+                <div class="agrupadorDaImg2">
+                    <span class="material-symbols-outlined" onclick="ampliarImg('projeto3d')">close</span>
+                    <div>
+                        <img src="imagens/projeto3d.jpg" alt="Projeto 3d" class="imgSec">
+                    </div>
+                </div>
+            </div>
             <p>Finalizamos a pesquisa com um projeto 3d de como seria essa máquina, tendo ela, botões laterais, entrada usb e agulhas para que o cego passassem a mão e sentisse o braille.</p>
     </article>
 
 
     <article class="pags">
         <section>
-            <h1>Construção</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti totam tempora commodi a. Excepturi magni labore quos rem, velit maiores odio maxime itaque ab. Iste ipsa voluptates quae eos sunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, quibusdam libero! Facere molestias quia optio laudantium iusto earum molestiae reprehenderit, dolorum inventore accusamus repudiandae illo! Quisquam eum autem quis quod.</p>
-            <h2>Subtitulo</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique rerum facere suscipit vel labore nemo quia nam tenetur ex ad hic praesentium pariatur cumque ipsum, totam laborum ea aspernatur obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate tempore a autem optio magnam atque, eum laborum. Iusto et, nam qui voluptatum, non quos inventore veniam quae voluptas magnam illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quaerat quia quisquam possimus, ipsam suscipit? Exercitationem dignissimos suscipit doloremque magnam, ipsam autem, earum aliquam tempora dolor ratione dolore? Dolorem, rem.' Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis non perspiciatis iusto nesciunt maxime deleniti, alias at aspernatur libero. Omnis id laboriosam et vero possimus pariatur, accusantium quisquam laborum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero cum facere eum praesentium optio voluptas odio voluptatum eaque voluptatibus blanditiis excepturi, accusantium perspiciatis itaque, provident consectetur esse aperiam voluptate minus?</p>
+            <h1 class="textoCentro">Construção</h1>
+            <h2>Robô</h2>
+            <img src="imagens/parteTrasCarrinho.jpg" alt="carrinho atrás" onclick="ampliarImg('trasCarro')" id="trasCarro">
+            <div class="agrupadorDaImg" id="trasCarro1">
+                <div class="agrupadorDaImg2">
+                    <span class="material-symbols-outlined" onclick="ampliarImg('trasCarro')">close</span>
+                    <div>
+                        <img src="imagens/parteTrasCarrinho.jpg" alt="Carrinho atrás" class="imgSec">
+                    </div>
+                </div>
+            </div>
+            <p>As partes que constituem os robôs são bem simples, nelas temos: a garra, dois sensores de luz e uma carenagem.</p>
+            <h2>Carenagem</h2>
+            <p>A carenagem do robô, serve para as missões que precisam empurrar alguma peça, além de servir como base para a garra</p>
+            <h2>Garra</h2>
+            <img src="imagens/parteFrenteCarrinho.jpg" alt="Garra do carrinho" onclick="ampliarImg('frenteCarro')" id="frenteCarro">
+            <div class="agrupadorDaImg" id="frenteCarro1">
+                <div class="agrupadorDaImg2">
+                    <span class="material-symbols-outlined" onclick="ampliarImg('frenteCarro')">close</span>
+                    <div>
+                        <img src="imagens/parteFrenteCarrinho.jpg" alt="Garra do carrinho" class="imgSec">
+                    </div>
+                </div>
+            </div>
+            <p>A garra fica presa à carenagem, para que tenha um tamanho correto e tenha mais precisão.</p>
+            <p>Utilizamos a garra tanto para pegar baterias, quanto para ajeitar o carrinho e ter uma menor variação, assim fazendo as missões com mais precisão.</p>
+            <h2>Sensor de luz</h2>
+            <p>Os sensores de luz ficam localizadas entra o EV3 e a parede da carenagem, ambos ficam virados para baixo detectando a refletância da luz, assim conseguindo fazer um programa para se ajeitar na linha preta.</p>
+            <h2>Funcionamento</h2>
+            <video src="videos/videoCarrinho.mp4" controls></video>
+            <p>A primeira missão que o robô vai é a da TV, onde caso não esteja totalmente alinhado, a garra se ajeita e empurra com a carenagem, voltando e indo para a missão da usina eólica.</p>
+            <p>Na missão da usina, ele utiliza os sensores de luz para se guiar na linha e ficar totalmente alinhado, e caso ainda não esteja completamente ajeitado, a garra se ajeita.</p>
         </section>
     </article>
 
@@ -137,7 +180,7 @@
         <section>
             <h1 class="textoCentro">Core Values</h1>
             <h2>Descoberta</h2>
-            <p>Desenvolvemos o seguidor de linhas na área de programação, uma ideia que ajudou muito a nossa equipe a se movimentar com mais precisão, na área de pesquisa desenvolvemos o tradutor braile para ajudar a leitura de cegos.</p>
+            <p>Desenvolvemos o seguidor de linhas na área de programação, uma ideia que ajudou muito a nossa equipe a se movimentar com mais precisão, na área de pesquisa desenvolvemos o tradutor braille para ajudar a leitura de cegos.</p>
             <h2>Inovação</h2>
             <p>	Um problema que tivemos foi a questão da variação do carrinho, então analisamos a mesa e pensamos em usar as linhas para nos guiar, onde caso o carrinho se desviasse da linha, ele mesmo verificava e se arrumava.</p>
             <h2>Impacto</h2>
@@ -150,7 +193,7 @@
                     </div>
                 </div>
             </div>
-            <p>Pesquisamos sobre os surdocegos, já que eles são muito impossibilitados em algumas questões, como a leitura, já que é dificil achar livros em braile e quando tem esses livros, são muito caros, fizemos um projeto para transcrever livros em braile.</p>
+            <p>Pesquisamos sobre os surdocegos, já que eles são muito impossibilitados em algumas questões, como a leitura, já que é dificil achar livros em braille e quando tem esses livros, são muito caros, fizemos um projeto para transcrever livros em braille.</p>
             <h2>Inclusão</h2>
             <p>A todo momento em que estavamos treinando, procuravamos ajudar toda a nossa equipe, respeitando as dificuldades dos colegas de entender nossas ideias, além de respeitar as diferenças do colega, como, agitação, timídez, etc.</p>
             <h2>Trabalho em equipe</h2>

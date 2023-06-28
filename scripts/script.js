@@ -1,6 +1,6 @@
 let ampliado = false
 
-window.document.getElementsByClassName('pags')[0].setAttribute('id', 'aparecer')
+window.document.getElementsByClassName('pags')[1].setAttribute('id', 'aparecer')
 
 
 function mudarPag(pagNum) {

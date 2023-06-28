@@ -114,9 +114,10 @@ article h2 {
     margin: 0 0 10px 0;
 }
 
-article > section > img {
+article > section > img, video {
     width: 50vw;
     cursor: pointer;
+    margin: 25px 0;
 }
 
 footer {
